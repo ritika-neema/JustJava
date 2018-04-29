@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Just Java</string>
+    <string name="hintName">Quel est votre nom?</string>
+    <string name="subjectEmail">Récapitulatif de la commande JustJava pour</string>
+</resources>

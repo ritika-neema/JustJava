@@ -1,0 +1,94 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardview"
+    android:layout_width="@dimen/_160dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4dp"
+    card_view:cardCornerRadius="@dimen/_7dp"
+    card_view:cardElevation="@dimen/_7dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="172dp"
+            android:layout_height="130dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher_round"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:paddingLeft="@dimen/_1dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="italic"
+            card_view:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <TextView
+            android:id="@+id/textviewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/_3dp"
+            android:paddingTop="@dimen/_3dp"
+            android:text=" + "
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewSubs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginStart="@dimen/_8dp"
+            android:paddingRight="@dimen/_2dp"
+            android:paddingTop="@dimen/_3dp"
+            android:text="-"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_30sp"
+            android:textStyle="bold"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintEnd_toStartOf="@+id/textviewAdd"
+            card_view:layout_constraintHorizontal_bias="0.857"
+            card_view:layout_constraintStart_toEndOf="@+id/price" />
+
+        <TextView
+            android:id="@+id/textViewRs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginStart="@dimen/_8dp"
+            android:text="Rs. "
+            android:textColor="@color/colorPrimaryDark"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:textColor="@color/colorPrimaryDark"
+            card_view:layout_constraintBottom_toBottomOf="parent"
+            card_view:layout_constraintStart_toEndOf="@+id/textViewRs"
+            card_view:layout_constraintTop_toBottomOf="@+id/textview1"
+            card_view:layout_constraintVertical_bias="1.0" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v7.widget.CardView>
